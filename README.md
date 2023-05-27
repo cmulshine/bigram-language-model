@@ -4,7 +4,7 @@ Developing a Bigram Language Model
 
 The language model created interprets text from the book "Walden" by Henry David Thoreau. For anyone unfamiliar with how a bigram language model works, an explanation is provided below. Otherwise, feel free to skip to the workflow of the code analysis at the bottom.
 
-~~~
+***
 A bigram language model is a statistical model used in natural language processing that predicts the probability of the next word in a sequence based on the previous word. In order to do that, the text is analyzed by breaking it down into pairs of adjacent words, referred to as "bigrams". Take the following text for a simple example: 
 
 "According to the research, the 3 factors that seem to have the greatest influence on increasing our happiness are our ability to reframe our situation more positively, our ability to experience gratitude, and our choice to be kind and generous."
@@ -17,7 +17,7 @@ P("situation" | "our") = 1/5, or 0.2
 P("choice" | "our") = 1/5, or 0.2
 
 The model is most likely to select "our ability", and then would continue moving forward, now analyzing the bigrams starting with "ability".
-~~~
+***
 
 The workflow of the code analysis is:
 
