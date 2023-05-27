@@ -2,7 +2,7 @@
 
 Developing a Bigram Language Model 
 
-The language model created interprets text from the book "Walden" by Henry David Thoreau. For anyone unfamiliar with how a bigram language model works, an explanation is provided below. Otherwise, feel free to skip to the workflow of the code analysis at the bottom.
+The language model created interprets text from the poem "Walden" by Henry David Thoreau. For anyone unfamiliar with how a bigram language model works, an explanation is provided below. Otherwise, feel free to skip to the workflow of the code analysis at the bottom.
 
 ***
 A bigram language model is a statistical model used in natural language processing that predicts the probability of the next word in a sequence based on the previous word. In order to do that, the text is analyzed by breaking it down into pairs of adjacent words, referred to as "bigrams". Take the following text for a simple example: 
@@ -21,6 +21,6 @@ The model is most likely to select "our ability", and then would continue moving
 
 The workflow of the code analysis is:
 
-1.  Download the text corpus to be interpreted at: https://www.gutenberg.org/files/205/205-0.txt
-2.  Load this file into the working file directory of Python
-3.  Run the file 'XXXXXXXXX', which will clean the original text (removing punctuation, and any text which is not part of the book), create a simple bigram language model, and return 100 sentences of text (with no more than 10 words in each sentence)
+1.  Download the text corpus to be interpreted: 'The_Project_Gutenberg.txt' (found at: https://www.gutenberg.org/files/205/205-0.txt )
+2.  Load the file into the working file directory of Python
+3.  Run the file 'bigram_language_model.ipynb', which will clean the original text (removing extra punctuation, and any text which is not part of the book), create a simple bigram language model, and return 100 sentences of text, with no more than 10 words in each sentence
