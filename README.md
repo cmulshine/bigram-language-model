@@ -24,3 +24,5 @@ The workflow of the code analysis is:
 1.  Download the text corpus to be interpreted: 'The_Project_Gutenberg.txt' (found at: https://www.gutenberg.org/files/205/205-0.txt )
 2.  Load the file into the working file directory of Python
 3.  Run the file 'bigram_language_model.ipynb', which will clean the original text (removing extra punctuation, and any text which is not part of the book), create a simple bigram language model, and return 100 sentences of text, with no more than 10 words in each sentence
+
+*Note: The language output will be essentially gibberish, due to the inherent limitation of bigram language models, which assume that the probability of a word only depends on the preceding word and does not take into account the context (beyond the immediate preceding word). In addition, Walden is not a very large corpus.
